@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3bde9cc725aa05736a7eb6a6adc09f6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000; background-color: white; padding: 5px; border: 1px solid #ccc;">
+    <p><strong>Legend</strong></p>
+    <p><span style="color: green;">■</span> High Grade</p>
+    <p><span style="color: yellow;">■</span> Medium Grade</p>
+    <p><span style="color: red;">■</span> Low Grade</p>
+    </div>
+    
+            <div class="folium-map" id="map_3bde9cc725aa05736a7eb6a6adc09f6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3bde9cc725aa05736a7eb6a6adc09f6a = L.map(
+                "map_3bde9cc725aa05736a7eb6a6adc09f6a",
+                {
+                    center: [47.6062, -122.3321],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e9ee39822f3cd5327919946521d28f6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3bde9cc725aa05736a7eb6a6adc09f6a);
+        
+    
+            var circle_marker_023aa176119816c15df158720768f932 = L.circleMarker(
+                [47.4551, -122.373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_3bde9cc725aa05736a7eb6a6adc09f6a);
+        
+    
+        var popup_64b151b764d03cd6ea6e439626951ad5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f963ab8998197b6ea5e103fcfef29629 = $(`<div id="html_f963ab8998197b6ea5e103fcfef29629" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 7631800110<br>         <strong>Price:</strong> $380,000<br>         <strong>House Grading:</strong> 10<br>         <strong>Distance to School:</strong> 1.5 miles<br>         <strong>Distance to Preschool:</strong> 0.8 miles<br>         <strong>Distance to City Center:</strong> 1.9 miles<br>         <strong>Living Space:</strong> 1,980 sqft     </div>`)[0];
+                popup_64b151b764d03cd6ea6e439626951ad5.setContent(html_f963ab8998197b6ea5e103fcfef29629);
+            
+        
+
+        circle_marker_023aa176119816c15df158720768f932.bindPopup(popup_64b151b764d03cd6ea6e439626951ad5)
+        ;
+
+        
+    
+    
+            circle_marker_023aa176119816c15df158720768f932.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cedcbf287cbf6d40c28c79bc56aa0aea = L.circleMarker(
+                [47.3311, -122.375],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_3bde9cc725aa05736a7eb6a6adc09f6a);
+        
+    
+        var popup_985396cad50812dca5551fdae0f0fe30 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7a18eb31bf9bd20aabbc2d78124db2a5 = $(`<div id="html_7a18eb31bf9bd20aabbc2d78124db2a5" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 121039083<br>         <strong>Price:</strong> $629,000<br>         <strong>House Grading:</strong> 8<br>         <strong>Distance to School:</strong> 0.9 miles<br>         <strong>Distance to Preschool:</strong> 1.0 miles<br>         <strong>Distance to City Center:</strong> 2.9 miles<br>         <strong>Living Space:</strong> 1,460 sqft     </div>`)[0];
+                popup_985396cad50812dca5551fdae0f0fe30.setContent(html_7a18eb31bf9bd20aabbc2d78124db2a5);
+            
+        
+
+        circle_marker_cedcbf287cbf6d40c28c79bc56aa0aea.bindPopup(popup_985396cad50812dca5551fdae0f0fe30)
+        ;
+
+        
+    
+    
+            circle_marker_cedcbf287cbf6d40c28c79bc56aa0aea.bindTooltip(
+                `<div>
+                     2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2464b113e8210a8e4355ce320158576d = L.circleMarker(
+                [47.3554, -122.324],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_3bde9cc725aa05736a7eb6a6adc09f6a);
+        
+    
+        var popup_f9ce3ab4ed5a5fb57aaa2accae8e6657 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ad34277889d6febb76fe8d07d473b546 = $(`<div id="html_ad34277889d6febb76fe8d07d473b546" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 3222049055<br>         <strong>Price:</strong> $650,000<br>         <strong>House Grading:</strong> 8<br>         <strong>Distance to School:</strong> 0.8 miles<br>         <strong>Distance to Preschool:</strong> 0.9 miles<br>         <strong>Distance to City Center:</strong> 1.6 miles<br>         <strong>Living Space:</strong> 2,800 sqft     </div>`)[0];
+                popup_f9ce3ab4ed5a5fb57aaa2accae8e6657.setContent(html_ad34277889d6febb76fe8d07d473b546);
+            
+        
+
+        circle_marker_2464b113e8210a8e4355ce320158576d.bindPopup(popup_f9ce3ab4ed5a5fb57aaa2accae8e6657)
+        ;
+
+        
+    
+    
+            circle_marker_2464b113e8210a8e4355ce320158576d.bindTooltip(
+                `<div>
+                     3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38905cc5c6538cef9f25c0f7a29032c5 = L.circleMarker(
+                [47.3811, -122.325],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_3bde9cc725aa05736a7eb6a6adc09f6a);
+        
+    
+        var popup_84867963a19865a7b1272e214c45a39f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4edfde00a7d297e1c3cac016dab49c5a = $(`<div id="html_4edfde00a7d297e1c3cac016dab49c5a" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 2013802030<br>         <strong>Price:</strong> $357,000<br>         <strong>House Grading:</strong> 7<br>         <strong>Distance to School:</strong> 0.8 miles<br>         <strong>Distance to Preschool:</strong> 1.4 miles<br>         <strong>Distance to City Center:</strong> 1.5 miles<br>         <strong>Living Space:</strong> 2,460 sqft     </div>`)[0];
+                popup_84867963a19865a7b1272e214c45a39f.setContent(html_4edfde00a7d297e1c3cac016dab49c5a);
+            
+        
+
+        circle_marker_38905cc5c6538cef9f25c0f7a29032c5.bindPopup(popup_84867963a19865a7b1272e214c45a39f)
+        ;
+
+        
+    
+    
+            circle_marker_38905cc5c6538cef9f25c0f7a29032c5.bindTooltip(
+                `<div>
+                     4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a3cc8ca8f46de9f4a8adaa72fb563b3b = L.circleMarker(
+                [47.459, -122.504],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_3bde9cc725aa05736a7eb6a6adc09f6a);
+        
+    
+        var popup_fac1c529700ca7c3c19eb5d7bf926c8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6bff02b6af1a7d8b56708d60a8adfff1 = $(`<div id="html_6bff02b6af1a7d8b56708d60a8adfff1" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 2623029003<br>         <strong>Price:</strong> $635,000<br>         <strong>House Grading:</strong> 7<br>         <strong>Distance to School:</strong> 0.3 miles<br>         <strong>Distance to Preschool:</strong> 2.2 miles<br>         <strong>Distance to City Center:</strong> 2.3 miles<br>         <strong>Living Space:</strong> 1,940 sqft     </div>`)[0];
+                popup_fac1c529700ca7c3c19eb5d7bf926c8f.setContent(html_6bff02b6af1a7d8b56708d60a8adfff1);
+            
+        
+
+        circle_marker_a3cc8ca8f46de9f4a8adaa72fb563b3b.bindPopup(popup_fac1c529700ca7c3c19eb5d7bf926c8f)
+        ;
+
+        
+    
+    
+            circle_marker_a3cc8ca8f46de9f4a8adaa72fb563b3b.bindTooltip(
+                `<div>
+                     5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

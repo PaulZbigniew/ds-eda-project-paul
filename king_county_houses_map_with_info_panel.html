@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a75b77efe4b9ff7c360d6bf70f39f691 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a75b77efe4b9ff7c360d6bf70f39f691" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a75b77efe4b9ff7c360d6bf70f39f691 = L.map(
+                "map_a75b77efe4b9ff7c360d6bf70f39f691",
+                {
+                    center: [47.6062, -122.3321],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2b9cddf1198c873f5327cfc223563bed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a75b77efe4b9ff7c360d6bf70f39f691);
+        
+    
+            var circle_marker_b6ff66df078a1615ba2e257fa260227c = L.circleMarker(
+                [47.4551, -122.373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_a75b77efe4b9ff7c360d6bf70f39f691);
+        
+    
+        var popup_7ede3b959f1b8e24241ff7f4d0baca32 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8087249fd30a916956374f335514e694 = $(`<div id="html_8087249fd30a916956374f335514e694" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 7631800110<br>         <strong>Price:</strong> $380,000<br>         <strong>House Grading:</strong> 10<br>         <strong>Distance to School:</strong> 1.5 miles<br>         <strong>Distance to Preschool:</strong> 0.8 miles<br>         <strong>Distance to City Center:</strong> 1.9 miles<br>         <strong>Living Space:</strong> 1,980 sqft     </div>`)[0];
+                popup_7ede3b959f1b8e24241ff7f4d0baca32.setContent(html_8087249fd30a916956374f335514e694);
+            
+        
+
+        circle_marker_b6ff66df078a1615ba2e257fa260227c.bindPopup(popup_7ede3b959f1b8e24241ff7f4d0baca32)
+        ;
+
+        
+    
+    
+            var circle_marker_b6e4969033d17c7a9753c4a9cd621f86 = L.circleMarker(
+                [47.3311, -122.375],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_a75b77efe4b9ff7c360d6bf70f39f691);
+        
+    
+        var popup_58bd54d6ae50c46acb5469abfa6ecbae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fde0875ff9688561e05f536e66aa4889 = $(`<div id="html_fde0875ff9688561e05f536e66aa4889" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 121039083<br>         <strong>Price:</strong> $629,000<br>         <strong>House Grading:</strong> 8<br>         <strong>Distance to School:</strong> 0.9 miles<br>         <strong>Distance to Preschool:</strong> 1.0 miles<br>         <strong>Distance to City Center:</strong> 2.9 miles<br>         <strong>Living Space:</strong> 1,460 sqft     </div>`)[0];
+                popup_58bd54d6ae50c46acb5469abfa6ecbae.setContent(html_fde0875ff9688561e05f536e66aa4889);
+            
+        
+
+        circle_marker_b6e4969033d17c7a9753c4a9cd621f86.bindPopup(popup_58bd54d6ae50c46acb5469abfa6ecbae)
+        ;
+
+        
+    
+    
+            var circle_marker_7bfaadef6eda91d25a9d3a0e0d585718 = L.circleMarker(
+                [47.3554, -122.324],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_a75b77efe4b9ff7c360d6bf70f39f691);
+        
+    
+        var popup_df7fae44aa17ce7eb43fac86833a0e07 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ecb22cd5458984a1c68e1af9cff6209 = $(`<div id="html_0ecb22cd5458984a1c68e1af9cff6209" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 3222049055<br>         <strong>Price:</strong> $650,000<br>         <strong>House Grading:</strong> 8<br>         <strong>Distance to School:</strong> 0.8 miles<br>         <strong>Distance to Preschool:</strong> 0.9 miles<br>         <strong>Distance to City Center:</strong> 1.6 miles<br>         <strong>Living Space:</strong> 2,800 sqft     </div>`)[0];
+                popup_df7fae44aa17ce7eb43fac86833a0e07.setContent(html_0ecb22cd5458984a1c68e1af9cff6209);
+            
+        
+
+        circle_marker_7bfaadef6eda91d25a9d3a0e0d585718.bindPopup(popup_df7fae44aa17ce7eb43fac86833a0e07)
+        ;
+
+        
+    
+    
+            var circle_marker_f2171e07f37a7ccd0d0a71e4357f81f5 = L.circleMarker(
+                [47.3811, -122.325],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_a75b77efe4b9ff7c360d6bf70f39f691);
+        
+    
+        var popup_03583eb3e86d029c86c543d1040f4f60 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ac2b0d05da158e3d9a3ef459f0bba0e = $(`<div id="html_5ac2b0d05da158e3d9a3ef459f0bba0e" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 2013802030<br>         <strong>Price:</strong> $357,000<br>         <strong>House Grading:</strong> 7<br>         <strong>Distance to School:</strong> 0.8 miles<br>         <strong>Distance to Preschool:</strong> 1.4 miles<br>         <strong>Distance to City Center:</strong> 1.5 miles<br>         <strong>Living Space:</strong> 2,460 sqft     </div>`)[0];
+                popup_03583eb3e86d029c86c543d1040f4f60.setContent(html_5ac2b0d05da158e3d9a3ef459f0bba0e);
+            
+        
+
+        circle_marker_f2171e07f37a7ccd0d0a71e4357f81f5.bindPopup(popup_03583eb3e86d029c86c543d1040f4f60)
+        ;
+
+        
+    
+    
+            var circle_marker_979676adb883bd65afadb4f942e7367e = L.circleMarker(
+                [47.459, -122.504],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_a75b77efe4b9ff7c360d6bf70f39f691);
+        
+    
+        var popup_f31158c6ce389df4acb29f10a4a51abb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ad8ce3d112d8aafacacf4fc6c9b823b = $(`<div id="html_9ad8ce3d112d8aafacacf4fc6c9b823b" style="width: 100.0%; height: 100.0%;">         <strong>House ID:</strong> 2623029003<br>         <strong>Price:</strong> $635,000<br>         <strong>House Grading:</strong> 7<br>         <strong>Distance to School:</strong> 0.3 miles<br>         <strong>Distance to Preschool:</strong> 2.2 miles<br>         <strong>Distance to City Center:</strong> 2.3 miles<br>         <strong>Living Space:</strong> 1,940 sqft     </div>`)[0];
+                popup_f31158c6ce389df4acb29f10a4a51abb.setContent(html_9ad8ce3d112d8aafacacf4fc6c9b823b);
+            
+        
+
+        circle_marker_979676adb883bd65afadb4f942e7367e.bindPopup(popup_f31158c6ce389df4acb29f10a4a51abb)
+        ;
+
+        
+    
+</script>
+</html>

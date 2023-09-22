@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_235c2d3c67b58b1c7728ebf4cf244f93 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_235c2d3c67b58b1c7728ebf4cf244f93" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_235c2d3c67b58b1c7728ebf4cf244f93 = L.map(
+                "map_235c2d3c67b58b1c7728ebf4cf244f93",
+                {
+                    center: [47.6062, -122.3321],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c89e88f86f16bce736864843721004de = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_235c2d3c67b58b1c7728ebf4cf244f93);
+        
+    
+            var marker_4e634028b441e0616b9944d09272b14d = L.marker(
+                [47.4551, -122.373],
+                {}
+            ).addTo(map_235c2d3c67b58b1c7728ebf4cf244f93);
+        
+    
+            var icon_7888b527f3639516ddeaf503eaba2254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e634028b441e0616b9944d09272b14d.setIcon(icon_7888b527f3639516ddeaf503eaba2254);
+        
+    
+        var popup_10bb8e38bbd7fa39f4ca9d1e3a068fe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45df1e3592c0c284413c11396601c59e = $(`<div id="html_45df1e3592c0c284413c11396601c59e" style="width: 100.0%; height: 100.0%;">House ID: 7631800110<br><b>Price: $380,000</b><br><b>House Grading: 10</b><br></div>`)[0];
+                popup_10bb8e38bbd7fa39f4ca9d1e3a068fe3.setContent(html_45df1e3592c0c284413c11396601c59e);
+            
+        
+
+        marker_4e634028b441e0616b9944d09272b14d.bindPopup(popup_10bb8e38bbd7fa39f4ca9d1e3a068fe3)
+        ;
+
+        
+    
+    
+            var marker_bc5e540273592c8b9eba6d5bd6e7ac23 = L.marker(
+                [47.3311, -122.375],
+                {}
+            ).addTo(map_235c2d3c67b58b1c7728ebf4cf244f93);
+        
+    
+            var icon_f3b110f5aeb19579782c87a095fd7f79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc5e540273592c8b9eba6d5bd6e7ac23.setIcon(icon_f3b110f5aeb19579782c87a095fd7f79);
+        
+    
+        var popup_4ec1eed2e063dd2024947abb76ef4c8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6faa5e188fa7da294a5ffe12cbe91736 = $(`<div id="html_6faa5e188fa7da294a5ffe12cbe91736" style="width: 100.0%; height: 100.0%;">House ID: 121039083<br><b>Price: $629,000</b><br><b>House Grading: 8</b><br></div>`)[0];
+                popup_4ec1eed2e063dd2024947abb76ef4c8d.setContent(html_6faa5e188fa7da294a5ffe12cbe91736);
+            
+        
+
+        marker_bc5e540273592c8b9eba6d5bd6e7ac23.bindPopup(popup_4ec1eed2e063dd2024947abb76ef4c8d)
+        ;
+
+        
+    
+    
+            var marker_abd9566cf0e6e0a0c1a2dfe60525867d = L.marker(
+                [47.3554, -122.324],
+                {}
+            ).addTo(map_235c2d3c67b58b1c7728ebf4cf244f93);
+        
+    
+            var icon_bd41fbde9bd602395b1875ab725227a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_abd9566cf0e6e0a0c1a2dfe60525867d.setIcon(icon_bd41fbde9bd602395b1875ab725227a6);
+        
+    
+        var popup_2401d53e9f10b315b0fc0be6c714a755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b8b4ba50853bc4d086a36b5c3027987 = $(`<div id="html_7b8b4ba50853bc4d086a36b5c3027987" style="width: 100.0%; height: 100.0%;">House ID: 3222049055<br><b>Price: $650,000</b><br><b>House Grading: 8</b><br></div>`)[0];
+                popup_2401d53e9f10b315b0fc0be6c714a755.setContent(html_7b8b4ba50853bc4d086a36b5c3027987);
+            
+        
+
+        marker_abd9566cf0e6e0a0c1a2dfe60525867d.bindPopup(popup_2401d53e9f10b315b0fc0be6c714a755)
+        ;
+
+        
+    
+    
+            var marker_49573e3750ab5df6613a35e2fbe485c7 = L.marker(
+                [47.3811, -122.325],
+                {}
+            ).addTo(map_235c2d3c67b58b1c7728ebf4cf244f93);
+        
+    
+            var icon_390c731c61b724934e726e587b2fef3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_49573e3750ab5df6613a35e2fbe485c7.setIcon(icon_390c731c61b724934e726e587b2fef3f);
+        
+    
+        var popup_c7fd499e9c6647004a04071bec4822ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20c97be5d16a343d2bb1dedfa723ecf5 = $(`<div id="html_20c97be5d16a343d2bb1dedfa723ecf5" style="width: 100.0%; height: 100.0%;">House ID: 2013802030<br><b>Price: $357,000</b><br><b>House Grading: 7</b><br></div>`)[0];
+                popup_c7fd499e9c6647004a04071bec4822ba.setContent(html_20c97be5d16a343d2bb1dedfa723ecf5);
+            
+        
+
+        marker_49573e3750ab5df6613a35e2fbe485c7.bindPopup(popup_c7fd499e9c6647004a04071bec4822ba)
+        ;
+
+        
+    
+    
+            var marker_fd0e8b1ea1fb1e288e6dbcf77cbbcee4 = L.marker(
+                [47.459, -122.504],
+                {}
+            ).addTo(map_235c2d3c67b58b1c7728ebf4cf244f93);
+        
+    
+            var icon_a9a4add717b722998eca4c58f8bb3fe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd0e8b1ea1fb1e288e6dbcf77cbbcee4.setIcon(icon_a9a4add717b722998eca4c58f8bb3fe9);
+        
+    
+        var popup_9538df666d3f547ae0d0d136ba70a9a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6736398038e3a95c60e8b1abb62018e7 = $(`<div id="html_6736398038e3a95c60e8b1abb62018e7" style="width: 100.0%; height: 100.0%;">House ID: 2623029003<br><b>Price: $635,000</b><br><b>House Grading: 7</b><br></div>`)[0];
+                popup_9538df666d3f547ae0d0d136ba70a9a1.setContent(html_6736398038e3a95c60e8b1abb62018e7);
+            
+        
+
+        marker_fd0e8b1ea1fb1e288e6dbcf77cbbcee4.bindPopup(popup_9538df666d3f547ae0d0d136ba70a9a1)
+        ;
+
+        
+    
+</script>
+</html>

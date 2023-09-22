@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_26a560379085367efa0371eb397f6c17 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_26a560379085367efa0371eb397f6c17" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_26a560379085367efa0371eb397f6c17 = L.map(
+                "map_26a560379085367efa0371eb397f6c17",
+                {
+                    center: [47.6062, -122.3321],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a74601202e161366c68e02c19129e563 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_26a560379085367efa0371eb397f6c17);
+        
+    
+            var marker_d5349be3e6c1f4896f727102e47197fa = L.marker(
+                [47.4551, -122.373],
+                {}
+            ).addTo(map_26a560379085367efa0371eb397f6c17);
+        
+    
+            var icon_f443220067bac07809140e779c61df80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5349be3e6c1f4896f727102e47197fa.setIcon(icon_f443220067bac07809140e779c61df80);
+        
+    
+        var popup_fca21efd45758b1bb15899d5cbccf12e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94cc72d54eb954f874ad0682988cc502 = $(`<div id="html_94cc72d54eb954f874ad0682988cc502" style="width: 100.0%; height: 100.0%;">House ID: 7631800110<br><b>Price: $380,000</b><br><b>House Grading: 10</b><br></div>`)[0];
+                popup_fca21efd45758b1bb15899d5cbccf12e.setContent(html_94cc72d54eb954f874ad0682988cc502);
+            
+        
+
+        marker_d5349be3e6c1f4896f727102e47197fa.bindPopup(popup_fca21efd45758b1bb15899d5cbccf12e)
+        ;
+
+        
+    
+    
+            var marker_2ac7ded049d6636f1cf9a6e85fa416a4 = L.marker(
+                [47.3311, -122.375],
+                {}
+            ).addTo(map_26a560379085367efa0371eb397f6c17);
+        
+    
+            var icon_a025fbc3529ef430d4a88965348fe7f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ac7ded049d6636f1cf9a6e85fa416a4.setIcon(icon_a025fbc3529ef430d4a88965348fe7f5);
+        
+    
+        var popup_3011f74c9cf6fae3357c7041eb650533 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d5162284441772a088eb99f1ba6d0a0 = $(`<div id="html_1d5162284441772a088eb99f1ba6d0a0" style="width: 100.0%; height: 100.0%;">House ID: 121039083<br><b>Price: $629,000</b><br><b>House Grading: 8</b><br></div>`)[0];
+                popup_3011f74c9cf6fae3357c7041eb650533.setContent(html_1d5162284441772a088eb99f1ba6d0a0);
+            
+        
+
+        marker_2ac7ded049d6636f1cf9a6e85fa416a4.bindPopup(popup_3011f74c9cf6fae3357c7041eb650533)
+        ;
+
+        
+    
+    
+            var marker_c58cbd08144dca7abd11eaff62d66175 = L.marker(
+                [47.3554, -122.324],
+                {}
+            ).addTo(map_26a560379085367efa0371eb397f6c17);
+        
+    
+            var icon_2582d486299209aa608870456e212d97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c58cbd08144dca7abd11eaff62d66175.setIcon(icon_2582d486299209aa608870456e212d97);
+        
+    
+        var popup_ebe2fa925bc4df6d49005ae0c3b5018e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4fe802b8865e73da8bd9f7fab76bedc = $(`<div id="html_e4fe802b8865e73da8bd9f7fab76bedc" style="width: 100.0%; height: 100.0%;">House ID: 3222049055<br><b>Price: $650,000</b><br><b>House Grading: 8</b><br></div>`)[0];
+                popup_ebe2fa925bc4df6d49005ae0c3b5018e.setContent(html_e4fe802b8865e73da8bd9f7fab76bedc);
+            
+        
+
+        marker_c58cbd08144dca7abd11eaff62d66175.bindPopup(popup_ebe2fa925bc4df6d49005ae0c3b5018e)
+        ;
+
+        
+    
+    
+            var marker_0184c8968eb12a1a9a57823e4647d74b = L.marker(
+                [47.3811, -122.325],
+                {}
+            ).addTo(map_26a560379085367efa0371eb397f6c17);
+        
+    
+            var icon_c5b699c7f413840bbf4fc67d6a184e6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0184c8968eb12a1a9a57823e4647d74b.setIcon(icon_c5b699c7f413840bbf4fc67d6a184e6b);
+        
+    
+        var popup_2444d3720582e58140f930e12f23fa04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81cd532195c0a0d7e42e4211b3942d71 = $(`<div id="html_81cd532195c0a0d7e42e4211b3942d71" style="width: 100.0%; height: 100.0%;">House ID: 2013802030<br><b>Price: $357,000</b><br><b>House Grading: 7</b><br></div>`)[0];
+                popup_2444d3720582e58140f930e12f23fa04.setContent(html_81cd532195c0a0d7e42e4211b3942d71);
+            
+        
+
+        marker_0184c8968eb12a1a9a57823e4647d74b.bindPopup(popup_2444d3720582e58140f930e12f23fa04)
+        ;
+
+        
+    
+    
+            var marker_624a5f6856f2239366c66a3ebcc040f7 = L.marker(
+                [47.459, -122.504],
+                {}
+            ).addTo(map_26a560379085367efa0371eb397f6c17);
+        
+    
+            var icon_4c1427b8491050b69a525137f419c57c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_624a5f6856f2239366c66a3ebcc040f7.setIcon(icon_4c1427b8491050b69a525137f419c57c);
+        
+    
+        var popup_6c8c0d4c775b29f81651d1bb925fea0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b16b9c73315d9350272dc27c24dc57e0 = $(`<div id="html_b16b9c73315d9350272dc27c24dc57e0" style="width: 100.0%; height: 100.0%;">House ID: 2623029003<br><b>Price: $635,000</b><br><b>House Grading: 7</b><br></div>`)[0];
+                popup_6c8c0d4c775b29f81651d1bb925fea0b.setContent(html_b16b9c73315d9350272dc27c24dc57e0);
+            
+        
+
+        marker_624a5f6856f2239366c66a3ebcc040f7.bindPopup(popup_6c8c0d4c775b29f81651d1bb925fea0b)
+        ;
+
+        
+    
+    
+            var heat_map_c8ce1e55e79b8746ea6f157b6099fa91 = L.heatLayer(
+                [[47.4551, -122.373], [47.3311, -122.375], [47.3554, -122.324], [47.3811, -122.325], [47.459, -122.504]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_26a560379085367efa0371eb397f6c17);
+        
+</script>
+</html>

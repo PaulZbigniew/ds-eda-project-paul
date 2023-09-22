@@ -25,8 +25,9 @@
    2. Checking for correlations
    3. Filter data for relevant houses (relevant for the stakeholder)
 6. For the stakeholder
-   1. Create recommendations
-   2. Create presentation with main findings 
+   1. Find relevant houses
+   2. Create recommendations
+   3. Create presentation with main findings 
 
 ## Stakeholder
 ### Larry Sanders
@@ -94,7 +95,7 @@
 | $357,000   | 3        | 2         | Yes        | 2,460              | 53,882    | 1      | Fair      | 7     | 98198   | 2013802030 | 0.8                         | 0.9                               | 17.6                     |
 | $635,000   | 3        | 1         | Yes        | 1,940              | 167,125   | 1      | Very Good | 7     | 98070   | 2623029003 | 0.3                         | 4.3                               | 11.2                     |
 
-### Recommendations for Larry (3)
+### Recommendations for Larry (3) TO BE FINALISED
 * 
 * consider that being away from other kids means to likely be yourself away from childrens' infrastructure like kindergarten and schools
 
